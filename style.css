@@ -1,0 +1,429 @@
+/* CSS - style.css */
+
+/* Global Styles */
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a, a:hover, a:visited {
+    color: #FFC72C;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Layout Styles */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row:before, .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-md-4 {
+    width: 33.33%;
+    float: left;
+    padding-right: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.col-md-8 {
+    width: 66.67%;
+    float: right;
+}
+
+header {
+    background-color: #222;
+    color: #FFF;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+main {
+    padding: 60px 0;
+}
+
+footer {
+    background-color: #222;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Component Styles */
+
+/* Part 1/4 */
+/* Quest List */
+
+.quest-list ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quest-list ul li {
+    flex: 1 1 auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.quest-list ul li:last-child {
+    margin-right: 0;
+}
+
+.quest-list ul li a {
+    display: block;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.quest-list ul li a:hover {
+    background-color: #FFC72C;
+    color: #FFF;
+}
+
+.quest-list ul li a img {
+    max-width: 100%;
+}
+
+/* Selected Quest */
+
+.selected-quest {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.selected-quest h3 {
+    margin-top: 0;
+}
+
+/* Part 2/4 */
+/* Hero List */
+
+.hero-list ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-list ul li {
+    flex: 1 1 auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.hero-list ul li:last-child {
+    margin-right: 0;
+}
+
+.hero-list ul li a {
+    display: block;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-list ul li a:hover {
+    background-color: #FFC72C;
+    color: #FFF;
+}
+
+.hero-list ul li a img {
+    max-width: 100%;
+}
+
+/* Hero Equipment */
+
+.hero-equipment div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-equipment div div {
+    flex: 1 1 auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+
+.hero-equipment div div:last-child {
+    margin-right: 0;
+}
+
+.hero-equipment div div h3 {
+    margin-top: 0;
+}
+
+.hero-equipment div div ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-equipment div div ul li {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.hero-equipment div div ul li:last-child {
+    margin-bottom: 0;
+}
+
+.hero-equipment div div ul li span {
+    display: inline-block;
+    width: 60%;
+}
+
+.hero-equipment div div ul li img {
+    display: inline-block;
+    width: 40%;
+    max-width: 50px;
+}
+
+/* Part 3/4 */
+/* Form */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+.form-group input[type="submit"],
+.form-group button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF;
+    text-transform: uppercase;
+    background-color: #FFC72C;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group input[type="submit"]:hover,
+.form-group button:hover {
+    background-color: #222;
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.modal-header {
+    margin-top: 0;
+}
+
+.modal-body {
+    margin-bottom: 20px;
+}
+
+.modal-footer {
+    margin-bottom: 0;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.modal-close:before {
+    content: '\2715';
+}
+
+/* End of part 3/4 */
+
+/* Part 4/4 */
+/* Form */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+
+.form-group input[type="submit"],
+.form-group button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF;
+    text-transform: uppercase;
+    background-color: #FFC72C;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group input[type="submit"]:hover,
+.form-group button:hover {
+    background-color: #222;
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.modal-header {
+    margin-top: 0;
+}
+
+.modal-body {
+    margin-bottom: 20px;
+}
+
+.modal-footer {
+    margin-bottom: 0;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.modal-close:before {
+    content: '\2715';
+}
+
+/* End of part 4/4 */

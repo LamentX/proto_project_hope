@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Brotherhood - Artifact Inventory</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Main Menu</a></li>
+                <li><a href="game-rules.html">Game Rules</a></li>
+                <li><a href="hero-selection.html">Hero Selection</a></li>
+                <li><a href="hero-equipment.html">Hero Equipment</a></li>
+                <li><a href="quest-selection.html">Quest Selection</a></li>
+                <li><a href="inn-upgrade.html">Inn Upgrade</a></li>
+                <li><a href="artifact-inventory.html">Artifact Inventory</a></li>
+                <li><a href="artifact-upgrade.html">Artifact Upgrade</a></li>
+                <li><a href="credits.html">Credits</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Artifact Inventory</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Artifacts</h2>
+                    <div class="artifact-list">
+                        <ul>
+                            <li>
+                                <a href="#" data-artifact="sword-of-light">
+                                    <img src="img/artifact1.png" alt="Sword of Light">
+                                    <h4>Sword of Light</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-artifact="amulet-of-power">
+                                    <img src="img/artifact2.png" alt="Amulet of Power">
+                                    <h4>Amulet of Power</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-artifact="ring-of-protection">
+                                    <img src="img/artifact3.png" alt="Ring of Protection">
+                                    <h4>Ring of Protection</h4>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h2>Selected Artifact</h2>
+                    <div class="selected-artifact">
+                        <h3>Sword of Light</h3>
+                        <p>Power: <span class="artifact-power">5</span></p>
+                        <button class="sell-artifact" style="display: none;">Sell Artifact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 The Brotherhood</p>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

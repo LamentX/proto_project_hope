@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Brotherhood - Quest Selection</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Main Menu</a></li>
+                <li><a href="game-rules.html">Game Rules</a></li>
+                <li><a href="hero-selection.html">Hero Selection</a></li>
+                <li><a href="hero-equipment.html">Hero Equipment</a></li>
+                <li><a href="quest-selection.html">Quest Selection</a></li>
+                <li><a href="inn-upgrade.html">Inn Upgrade</a></li>
+                <li><a href="artifact-inventory.html">Artifact Inventory</a></li>
+                <li><a href="artifact-upgrade.html">Artifact Upgrade</a></li>
+                <li><a href="credits.html">Credits</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Quest Selection</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Quests</h2>
+                    <div class="quest-list">
+                        <ul>
+                            <li>
+                                <a href="#" data-quest="goblin-cave">
+                                    <img src="img/quest1.png" alt="Goblin Cave">
+                                    <h4>Goblin Cave</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-quest="dragon-lair">
+                                    <img src="img/quest2.png" alt="Dragon Lair">
+                                    <h4>Dragon Lair</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-quest="undead-tomb">
+                                    <img src="img/quest3.png" alt="Undead Tomb">
+                                    <h4>Undead Tomb</h4>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h2>Selected Quest</h2>
+                    <div class="selected-quest">
+                        <h3>Goblin Cave</h3>
+                        <p>Difficulty: <span class="quest-difficulty">Easy</span></p>
+                        <p>Minimum Level: <span class="quest-min-level">1</span></p>
+                        <p>Reward: <span class="quest-reward">100</span></p>
+                        <button class="start-quest" style="display: none;">Start Quest</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 The Brotherhood</p>
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
